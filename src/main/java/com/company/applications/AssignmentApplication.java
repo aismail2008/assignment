@@ -1,7 +1,7 @@
 package com.company.applications;
 
+import com.company.applications.health.Healthcheck;
 import com.company.applications.resources.CounterResource;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -25,8 +25,11 @@ public class AssignmentApplication extends Application<AssignmentConfiguration> 
     @Override
     public void run(final AssignmentConfiguration configuration,
                     final Environment environment) {
-        // TODO: implement application
         environment.jersey().packages(getName());
+
+        // Set the application health checks
+        environment.healthChecks().register("health", new Healthcheck());
+
         environment.jersey().register(new CounterResource(environment));
     }
 
