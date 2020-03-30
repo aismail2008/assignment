@@ -17,7 +17,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: io.swagger:swagger-annotations:1.5.23" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-core:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-util:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.1" level="project" />
@@ -65,9 +64,6 @@
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-metrics:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-jersey:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.core:jersey-server:2.29.1" level="project" />
-    <orderEntry type="library" name="Maven: org.glassfish.jersey.core:jersey-common:2.29.1" level="project" />
-    <orderEntry type="library" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.3" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.activation:jakarta.activation:1.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.core:jersey-client:2.29.1" level="project" />
     <orderEntry type="library" name="Maven: jakarta.ws.rs:jakarta.ws.rs-api:2.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.media:jersey-media-jaxb:2.29.1" level="project" />
@@ -87,15 +83,12 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.10.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.10.1" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet:2.29.1" level="project" />
-    <orderEntry type="library" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet-core:2.29.1" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:9.4.24.v20191120" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-io:9.4.24.v20191120" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-webapp:9.4.24.v20191120" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-xml:9.4.24.v20191120" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-continuation:9.4.24.v20191120" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: javax.xml.bind:jaxb-api:2.3.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: javax.activation:javax.activation-api:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-servlets:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard.metrics:metrics-annotation:4.1.2" level="project" />
     <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-jetty:2.0.0" level="project" />
@@ -116,5 +109,26 @@
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-access:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: net.sourceforge.argparse4j:argparse4j:0.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty.toolchain.setuid:jetty-setuid-java:1.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.smoketurner:dropwizard-swagger:2.0.0-1" level="project" />
+    <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-auth:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-assets:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-views:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: io.dropwizard:dropwizard-views-freemarker:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.29" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jersey.media:jersey-media-multipart:2.29.1" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jersey.core:jersey-common:2.29.1" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.activation:jakarta.activation:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jvnet.mimepull:mimepull:1.9.11" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-jersey2-jaxrs:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-jaxrs:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-core:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-models:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.swagger:swagger-annotations:1.6.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.1.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.reflections:reflections:0.9.11" level="project" />
+    <orderEntry type="library" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet-core:2.29.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: javax.xml.bind:jaxb-api:2.3.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: javax.activation:javax.activation-api:1.2.0" level="project" />
   </component>
 </module>

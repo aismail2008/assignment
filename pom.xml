@@ -18,7 +18,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <dropwizard.version>2.0.0</dropwizard.version>
         <mainClass>com.company.applications.AssignmentApplication</mainClass>
-        <swagger.version>1.5.23</swagger.version>
+        <com.smoketurner.version>2.0.0-1</com.smoketurner.version>
     </properties>
 
     <dependencyManagement>
@@ -31,21 +31,21 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-annotations</artifactId>
-                <version>${swagger.version}</version>
+                <groupId>com.smoketurner</groupId>
+                <artifactId>dropwizard-swagger</artifactId>
+                <version>${com.smoketurner.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
         <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-annotations</artifactId>
-        </dependency>
-        <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.smoketurner</groupId>
+            <artifactId>dropwizard-swagger</artifactId>
         </dependency>
     </dependencies>
 
@@ -130,22 +130,6 @@
         </plugins>
     </build>
 
-    <reporting>
-        <plugins>
-            <plugin>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>3.0.0</version>
-                <configuration>
-                    <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-                    <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.0.1</version>
-            </plugin>
-        </plugins>
-    </reporting>
     <profiles>
         <profile>
             <id>java11+</id>

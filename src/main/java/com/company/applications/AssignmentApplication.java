@@ -5,6 +5,8 @@ import com.company.applications.resources.CounterResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import io.federecio.dropwizard.swagger.SwaggerBundle;
+import io.federecio.dropwizard.swagger.SwaggerBundleConfiguration;
 
 public class AssignmentApplication extends Application<AssignmentConfiguration> {
 
@@ -19,7 +21,12 @@ public class AssignmentApplication extends Application<AssignmentConfiguration> 
 
     @Override
     public void initialize(final Bootstrap<AssignmentConfiguration> bootstrap) {
-        // TODO: application initialization
+        bootstrap.addBundle(new SwaggerBundle<AssignmentConfiguration>() {
+            @Override
+            protected SwaggerBundleConfiguration getSwaggerBundleConfiguration(AssignmentConfiguration configuration) {
+                return configuration.swaggerBundleConfiguration;
+            }
+        });
     }
 
     @Override

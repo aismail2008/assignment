@@ -2,6 +2,7 @@ logging:
   level: INFO
   loggers:
     com.company.applications: DEBUG
+
 server:
   applicationConnectors:
     - type: http
@@ -9,3 +10,7 @@ server:
   adminConnectors:
     - type: http
       port: 9999
+
+swagger:
+  resourcePackage: com.company.applications.resources
+  includeSwaggerResource: true
