@@ -11,6 +11,8 @@ server:
     - type: http
       port: 9999
 
+ApplicationName: Assignment
+
 swagger:
   resourcePackage: com.company.applications.resources
   includeSwaggerResource: true

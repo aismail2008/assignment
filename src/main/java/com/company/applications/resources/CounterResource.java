@@ -7,6 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.inject.Inject;
 import javax.inject.Singleton;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -24,6 +25,7 @@ public class CounterResource {
 
     private final Counter helloCounter;
 
+    @Inject
     public CounterResource(final Environment environment) {
         this.helloCounter = new Counter();
         environment.metrics().register("test_counter", this.helloCounter);
